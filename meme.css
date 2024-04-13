@@ -1,154 +1,153 @@
 /* added border box for all elements  */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: rgba(0, 255, 13, 0.137);
+  margin: 0;
+  background-color: rgba(0, 255, 13, 0.137);
 }
 
 #container {
-    background-color: rgba(98, 255, 111, 0.349);
-    position: absolute;
-    margin: 0, auto;
-    width: 100%;
+  background-color: rgba(98, 255, 111, 0.349);
+  position: absolute;
+  margin: 0, auto;
+  width: 100%;
 }
 
 h1 {
-    text-align: center;
-    font-family: Workbench, sans-serif;
-    font-size: 11rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-    text-shadow: 18px 18px 15px rgba(0, 0, 0, 0.267);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    margin: 8rem 0rem 4rem 0rem;
+  text-align: center;
+  font-family: Workbench, sans-serif;
+  font-size: 11rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  text-shadow: 18px 18px 15px rgba(0, 0, 0, 0.267);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 8rem 0rem 4rem 0rem;
 }
 
 form {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.534);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0 3rem 0;
-    line-height: 2rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.534);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 3rem 0;
+  line-height: 2rem;
 }
 
-label{
-    color: white;
-    line-height: 2.1em;
-    font-family: Roboto, sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    text-shadow: 3px 3px 5px rgba(0, 94, 8, 0.377);
+label {
+  color: white;
+  line-height: 2.1em;
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 3px 3px 5px rgba(0, 94, 8, 0.377);
 }
 
-input.text-boxes{
-    font-family: roboto, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 2rem;
-    letter-spacing: 2px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.705);
-    color: white;
-    margin: 0, auto;
-    width: 25%;
-    padding: .6rem;
+input.text-boxes {
+  font-family: roboto, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  margin: 0, auto;
+  width: 25%;
+  padding: 0.6rem;
 }
 /* placeholder styling  */
 input::placeholder {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 /* button styling  */
-#render-button{
-    text-align: center;
-    font-family: Workbench, sans-serif;
-    font-size: 1.2em;
-    font-weight: 200;
-    border: none;
-    border-radius: 5%;
-    box-shadow: 3px 3px 5px rgba(0, 94, 8, 0.377);
-    padding: 1em 1em;
-    background-color: rgb(193, 255, 198);
-    color: rgb(0, 0, 0);
-    letter-spacing: 2px;
-    margin: auto;
+#render-button {
+  text-align: center;
+  font-family: Workbench, sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 3px 3px 5px rgba(0, 94, 8, 0.377);
+  padding: 1em 1em;
+  background-color: rgb(193, 255, 198);
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  margin: auto;
 }
 /* render hover effect */
-#render-button:hover{
-    background-color: rgb(0, 0, 0, 0.705);
-    color: white;
-    transform: scale(.98);
-    transition: all 200ms linear;
+#render-button:hover {
+  background-color: rgb(0, 0, 0, 0.705);
+  color: white;
+  transform: scale(0.98);
+  transition: all 200ms linear;
 }
 
 /* main container  */
-#meme-container{
-    position: relative;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 100%;
+#meme-container {
+  position: relative;
+  display: flex;
+  /* flex-flow:row wrap; */
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  margin: auto;
+  width: 100%;
 }
 
 /* x to remove div  */
 .x {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 5px;
-    right: 5px;
-    margin: auto;
-    opacity: 0.2;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  right: 5px;
+  margin: auto;
+  opacity: 0.2;
 }
 /* hover effect on x  */
-.x:hover{
-    border: 2px solid rgba(214, 0, 0, 0.582);
-    opacity: 1;
-    transition: all 100ms ease-in;
+.x:hover {
+  border: 2px solid rgba(214, 0, 0, 0.582);
+  opacity: 1;
+  transition: all 100ms ease-in;
 }
 
 /* set to relative for the x to be inside with absolute  */
-.imgs{
-    position: relative;
-    display: flex;
-    justify-content: center;
+.imgs {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 /* top text styling and position  */
 .top-t {
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    font-size: 3.4em;
-    font-family: roboto, sans-serif;
-    font-weight: 700;
-    color:white;
-    -webkit-text-stroke: 2.5px black; /*found out how to do this here https://kinsta.com/blog/css-text-outline/ */
-    top: 1rem;
-    margin: auto;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  font-size: 3.4em;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 2.5px black; /*found out how to do this here https://kinsta.com/blog/css-text-outline/ */
+  top: 1rem;
+  margin: auto;
 }
 
 /* bottom text styling and position  */
 .bot-t {
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    font-size: 3.4em;
-    font-family: roboto, sans-serif;
-    font-weight: 700;
-    color:white;
-    -webkit-text-stroke: 2.5px black;
-    bottom: 1rem;
-    margin: auto;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  font-size: 3.4em;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 2.5px black;
+  bottom: 1rem;
+  margin: auto;
 }
-
-
